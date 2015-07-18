@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html ng-app="demoApp">
+
+<head>
+    <title> AngularJS Test Insert, Select, Delete, Update Database</title>
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bower_components/angular-bootstrap/ui-bootstrap-csp.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="well">
+            <form action="" class="form-horizontal" name="addcustomer" role="form" novalidate method="POST">
+                <h3>Update Customer</h3>
+                <hr>
+                <!-- Input IDCustomer -->
+                <div class="form-group">
+                    <label for="customer" class="col-sm-2 control-label">IDCustomer</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="customer" placeholder="IDCustomer" ng-model="dataS.CustomerID">
+                    </div>
+                </div>
+                <!-- Input Name -->
+                <div class="form-group">
+                    <label for="names" class="col-sm-2 control-label">Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="names" placeholder="Name" ng-model="dataS.Name">
+                    </div>
+                </div>
+                <!-- Input E-mail -->
+                <div class="form-group">
+                    <label for="email" class="col-sm-2 control-label">E-mail</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" placeholder="Email" ng-model="dataS.Email">
+                    </div>
+                </div>
+                <!-- Input CountryCode -->
+                <div class="form-group">
+                    <label for="countrycode" class="col-sm-2 control-label">CountryCode</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="countrycode" placeholder="CountryCode" ng-model="dataS.CountryCode">
+                    </div>
+                </div>
+                <!-- Input Budget -->
+                <div class="form-group">
+                    <label for="budget" class="col-sm-2 control-label">Budget</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="budget" placeholder="Budget" ng-model="dataS.Budget">
+                    </div>
+                </div>
+                <!-- Input Used -->
+                <div class="form-group">
+                    <label for="used" class="col-sm-2 control-label">Used</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="used" placeholder="Used" ng-model="dataS.Used">
+                    </div>
+                </div>
+                <!-- Button Click Submit Doing Function addEmployee in Angular Working -->
+                <div class="form-group">
+                    <button data-ng-click="()" class="btn btn-success btn-lg btn-block" type="submit" name="add">Update Save</button>
+                    <button type="reset" class="btn btn-danger btn-lg btn-block" name="add">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- node-modules Angular -->
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-route/angular-route.min.js"></script>
+    <!-- bower_components Angular -->
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <!--script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script-->
+    <!-- Angular Style custom code -->
+    <script type="text/javascript" src="app/app.js"></script>
+    <script type="text/javascript" src="app/script.js"></script>
+    <!-- Javascrtpt ohter -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.0.js"></script>
+    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--script type="text/javascript" src="node_modules/bootstrap/js/modal.js"></script-->
+
+
+</body>
+
+</html>
